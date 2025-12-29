@@ -10,8 +10,6 @@ public class Task02 {
         }
         System.out.println("Output: " + sum);
     }
-
-    // Prime number check korar method
     public static boolean isPrime(int n) {
         if (n <= 1) return false;
         for (int i = 2; i <= Math.sqrt(n); i++) {
