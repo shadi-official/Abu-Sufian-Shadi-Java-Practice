@@ -1,0 +1,22 @@
+public class Task02 {
+    public static void main(String[] args) {
+        int[] numbers = {11, 15, 2, 7, 6};
+        int sum = 0;
+
+        for (int num : numbers) {
+            if (isPrime(num)) {
+                sum += num;
+            }
+        }
+        System.out.println("Output: " + sum);
+    }
+
+    // Prime number check korar method
+    public static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
+}
